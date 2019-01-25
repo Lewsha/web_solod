@@ -1,0 +1,18 @@
+<form action="">
+  <div class="cardInfo">
+    <img src="assets/images/maestro.png" alt="maestro" align="right">
+    <img src="assets/images/mastercard.png" alt="mastercard" align="right">
+    <img src="assets/images/visa.png" alt="visa" align="right">
+    <input class="card" type="text" maxlength="16" name="card" id="card" placeholder="Номер карты" pattern="\d{16}" required>
+    <input class="date" type="month" name="date" id="date" placeholder="Срок действия" min="2019-01">
+    <input class="cvc" type="password" maxlength="3" name="cvc" id="cvc" placeholder="CVC" pattern="\d{3}" required>
+  </div>
+  <div class="paymentInfo">
+    <input type="text" name="money" id="money" placeholder="Сумма" pattern="\d{1,5}(.\d{2})?" required>
+    <textarea name="comment" id="comment" cols="36" rows="5" placeholder="Комментарий (до 150 символов)" maxlength="150"></textarea>
+    <!-- <input type="text" name="comment" id="comment" placeholder="Комментарий (до 150 символов)" maxlength="150"> -->
+    <input type="email" name="email" id="email" placeholder="email для квитациии" required>
+  </div>
+  <input type="submit" value="Заплатить" disabled>
+</form>
+

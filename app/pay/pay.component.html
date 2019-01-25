@@ -1,0 +1,9 @@
+<div>
+  <div class="row">
+    <app-bank_menu (featureSelected)="onNavigate($event)"></app-bank_menu>
+    <div class="row">
+      <app-any_bank *ngIf="loadedFeature === 'any_bank'"></app-any_bank>
+      <app-internet_bank *ngIf="loadedFeature !== 'any_bank'"></app-internet_bank>
+    </div>
+  </div>
+</div>

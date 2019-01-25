@@ -1,0 +1,14 @@
+div{
+  display: inline-block;
+}
+h1{
+  text-align: left;
+}
+.picture {
+  position: relative;
+  float: right;
+}
+/*.layout{
+  position: absolute;
+}*/
+

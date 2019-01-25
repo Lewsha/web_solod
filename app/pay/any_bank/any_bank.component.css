@@ -1,0 +1,60 @@
+div {
+  display: inline-block;
+  margin: 10px;
+  width: 300px;
+  vertical-align: top;
+}
+
+.image{
+  display: inline-block;
+}
+
+img{
+  width: 40px;
+  height: 30px;
+}
+
+input,
+textarea {
+  display: inline-block;
+  margin: 2%;
+  width: 90%;
+  border: none;
+  border-bottom: 1px solid black;
+}
+.cardInfo {
+  border: 1px solid gray;
+  border-radius: 10px;
+  height: 200px;
+  width: 350px;
+  top: 0;
+  background: #F0F0F0; /* Цвет фона */
+  box-shadow: -1px 5px 10px 5px #D3D3D3; /* Параметры тени */
+  padding: 10px;
+}
+
+.card {
+  margin: 10% 5%;
+  background: #F0F0F0;
+}
+
+.date {
+  width: 60%;
+  margin: 5% auto 10% 5%;
+  background: #F0F0F0;
+  /* display: inline-block; */
+}
+
+.cvc {
+  width: 15%;
+  margin: 5% auto 10% 5%;
+  background: #F0F0F0;
+}
+
+input[type="submit"] {
+  width: 100px;
+  display: block;
+  border: 1px solid black;
+  background: plum;
+  color: #000;
+}

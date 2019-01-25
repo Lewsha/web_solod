@@ -1,0 +1,42 @@
+.title {
+  font-weight: bold;
+}
+form {
+  /* width: 70% */
+  max-width: 500px;
+}
+form p {
+  display: grid;
+  grid-template-columns: 30% repeat(3, 23%)
+}
+
+input[type="text"] {
+  grid-column: 2/5;
+  border: none;
+  border-bottom: 1px solid black;
+}
+
+input[type="submit"],
+input[type="reset"]
+{
+  display: block;
+  margin-bottom: 10px;
+  height: 30px;
+  font-weight: bold;
+}
+
+input[type="submit"] {
+  border: 1px solid black;
+  background: plum;
+  color: #000;
+}
+
+input[type="reset"] {
+  border: none;
+  background: none;
+  color: blue;
+}
+
+input[type="radio"]:checked + label {
+  color: blue;
+}
