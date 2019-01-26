@@ -1,12 +1,17 @@
 div {
   display: inline-block;
   margin: 10px;
-  width: 300px;
+  width: 350px;
   vertical-align: top;
 }
 
 .image{
   display: inline-block;
+}
+
+form {
+  /* width: 70% */
+  max-width: 900px;
 }
 
 form p {

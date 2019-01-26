@@ -12,6 +12,10 @@ a{
   text-decoration: none;
 }
 
+p{
+  margin: 2px 0 2px;
+}
+
 .indented, b{
   margin: 0 4em 4em 0;
 }
