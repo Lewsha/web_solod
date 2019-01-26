@@ -12,47 +12,21 @@
       <change afterPath="$PROJECT_DIR$/../../e2e/tsconfig.e2e.json" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../../package-lock.json" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../../package.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app.component.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app.component.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app.component.spec.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app.component.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app.module.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/company/company.component.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/company/company.component.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/information/information.component.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pay/any_bank/any_bank.component.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pay/any_bank/any_bank.component.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pay/any_bank/any_bank.component.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pay/bank_menu/bank_menu.component.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pay/bank_menu/bank_menu.component.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pay/bank_menu/bank_menu.component.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pay/internet_bank/internet_bank.component.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pay/internet_bank/internet_bank.component.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pay/pay.component.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pay/pay.component.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pay/pay.component.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pay_menu/pay_menu.component.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pay_menu/pay_menu.component.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pay_menu/pay_menu.component.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/request_pay/request_pay.component.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/request_pay/request_pay.component.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/request_pay/request_pay.component.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../assets/.gitkeep" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../browserslist" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../environments/environment.prod.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../environments/environment.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../favicon.ico" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../karma.conf.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../main.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../polyfills.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../styles.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../test.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../tsconfig.app.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../tsconfig.spec.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../tslint.json" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../../tsconfig.json" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../../tslint.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/information/information.component.css" beforeDir="false" afterPath="$PROJECT_DIR$/information/information.component.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/information/information.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/information/information.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pay/any_bank/any_bank.component.css" beforeDir="false" afterPath="$PROJECT_DIR$/pay/any_bank/any_bank.component.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pay/any_bank/any_bank.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/pay/any_bank/any_bank.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pay/bank_menu/bank_menu.component.css" beforeDir="false" afterPath="$PROJECT_DIR$/pay/bank_menu/bank_menu.component.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pay/bank_menu/bank_menu.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/pay/bank_menu/bank_menu.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pay/internet_bank/internet_bank.component.css" beforeDir="false" afterPath="$PROJECT_DIR$/pay/internet_bank/internet_bank.component.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pay/internet_bank/internet_bank.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/pay/internet_bank/internet_bank.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pay_menu/pay_menu.component.css" beforeDir="false" afterPath="$PROJECT_DIR$/pay_menu/pay_menu.component.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pay_menu/pay_menu.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/pay_menu/pay_menu.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/request_pay/request_pay.component.css" beforeDir="false" afterPath="$PROJECT_DIR$/request_pay/request_pay.component.css" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -65,20 +39,47 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/request_pay/request_pay.component.html">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/information/information.component.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="425">
-              <caret line="25" column="58" lean-forward="true" selection-start-line="25" selection-start-column="58" selection-end-line="25" selection-end-column="58" />
+            <state relative-caret-position="68">
+              <caret line="4" column="8" lean-forward="true" selection-start-line="4" selection-start-column="8" selection-end-line="4" selection-end-column="8" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/information/information.component.css">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="289">
+              <caret line="17" lean-forward="true" selection-start-line="17" selection-end-line="17" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/request_pay/request_pay.component.css">
+        <entry file="file://$PROJECT_DIR$/pay_menu/pay_menu.component.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="228">
-              <caret line="18" column="1" lean-forward="true" selection-start-line="18" selection-start-column="1" selection-end-line="18" selection-end-column="1" />
+            <state relative-caret-position="17">
+              <caret line="1" column="18" lean-forward="true" selection-start-line="2" selection-start-column="25" selection-end-line="2" selection-end-column="40" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/pay_menu/pay_menu.component.css">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="255">
+              <caret line="15" selection-start-line="15" selection-end-line="17" selection-end-column="1" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app.component.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="289">
+              <caret line="17" lean-forward="true" selection-start-line="17" selection-end-line="17" />
             </state>
           </provider>
         </entry>
@@ -86,12 +87,11 @@
     </leaf>
   </component>
   <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/information/information.component.css" />
         <option value="$PROJECT_DIR$/pay/pay.component.css" />
         <option value="$PROJECT_DIR$/pay/pay.component.html" />
         <option value="$PROJECT_DIR$/request_pay/bank_menu/bank_menu.component.ts" />
@@ -102,22 +102,27 @@
         <option value="$PROJECT_DIR$/request_pay/any_bank/any_bank.component.ts" />
         <option value="$PROJECT_DIR$/request_pay/any_bank/any_bank.component.html" />
         <option value="$PROJECT_DIR$/pay/pay.component.ts" />
-        <option value="$PROJECT_DIR$/pay_menu/pay_menu.component.html" />
         <option value="$PROJECT_DIR$/request_pay/request_pay.component.ts" />
         <option value="$PROJECT_DIR$/app.module.ts" />
         <option value="$PROJECT_DIR$/../index.html" />
-        <option value="$PROJECT_DIR$/app.component.html" />
         <option value="$PROJECT_DIR$/app.component.ts" />
         <option value="$PROJECT_DIR$/company/company.component.ts" />
-        <option value="$PROJECT_DIR$/pay/internet_bank/internet_bank.component.html" />
-        <option value="$PROJECT_DIR$/pay/internet_bank/internet_bank.component.css" />
         <option value="$PROJECT_DIR$/company/company.component.html" />
-        <option value="$PROJECT_DIR$/information/information.component.html" />
         <option value="$PROJECT_DIR$/../../../../home_work/sprites/img_style.css" />
-        <option value="$PROJECT_DIR$/pay/any_bank/any_bank.component.css" />
         <option value="$PROJECT_DIR$/request_pay/request_pay.component.html" />
+        <option value="$PROJECT_DIR$/pay/any_bank/any_bank.component.css" />
+        <option value="$PROJECT_DIR$/pay/internet_bank/internet_bank.component.css" />
         <option value="$PROJECT_DIR$/request_pay/request_pay.component.css" />
+        <option value="$PROJECT_DIR$/pay/internet_bank/internet_bank.component.html" />
+        <option value="$PROJECT_DIR$/pay/bank_menu/bank_menu.component.css" />
+        <option value="$PROJECT_DIR$/pay/bank_menu/bank_menu.component.html" />
+        <option value="$PROJECT_DIR$/../../../cookbook/src/app/header/header.component.html" />
         <option value="$PROJECT_DIR$/pay/any_bank/any_bank.component.html" />
+        <option value="$PROJECT_DIR$/pay_menu/pay_menu.component.html" />
+        <option value="$PROJECT_DIR$/app.component.html" />
+        <option value="$PROJECT_DIR$/information/information.component.html" />
+        <option value="$PROJECT_DIR$/pay_menu/pay_menu.component.css" />
+        <option value="$PROJECT_DIR$/information/information.component.css" />
       </list>
     </option>
   </component>
@@ -148,18 +153,7 @@
             <path>
               <item name="app" type="b2602c69:ProjectViewProjectNode" />
               <item name="app" type="462c0819:PsiDirectoryNode" />
-              <item name="pay" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="app" type="b2602c69:ProjectViewProjectNode" />
-              <item name="app" type="462c0819:PsiDirectoryNode" />
-              <item name="pay" type="462c0819:PsiDirectoryNode" />
-              <item name="any_bank" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="app" type="b2602c69:ProjectViewProjectNode" />
-              <item name="app" type="462c0819:PsiDirectoryNode" />
-              <item name="request_pay" type="462c0819:PsiDirectoryNode" />
+              <item name="pay_menu" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -206,12 +200,13 @@
       <workItem from="1546760282054" duration="5470000" />
       <workItem from="1546868893955" duration="4285000" />
       <workItem from="1546969759555" duration="3103000" />
-      <workItem from="1548404325315" duration="11050000" />
+      <workItem from="1548404325315" duration="16604000" />
+      <workItem from="1548477834902" duration="14338000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="28729000" />
+    <option name="totallyTimeSpent" value="48621000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -287,13 +282,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/pay/pay.component.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="8" column="6" lean-forward="true" selection-start-line="8" selection-start-column="6" selection-end-line="8" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/pay_menu/pay_menu.component.ts">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="238">
@@ -351,20 +339,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app.component.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="289">
-          <caret line="17" lean-forward="true" selection-start-line="17" selection-end-line="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/information/information.component.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="7" column="19" selection-start-line="7" selection-start-column="19" selection-end-line="7" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/pay/any_bank/any_bank.component.ts">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="170">
@@ -386,31 +360,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/company/company.component.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="12" column="16" lean-forward="true" selection-start-line="12" selection-start-column="16" selection-end-line="12" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/pay/internet_bank/internet_bank.component.ts">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="221">
           <caret line="13" lean-forward="true" selection-start-line="13" selection-end-line="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pay/internet_bank/internet_bank.component.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="6" column="5" lean-forward="true" selection-start-line="6" selection-start-column="5" selection-end-line="6" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pay/internet_bank/internet_bank.component.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="262">
-          <caret line="22" column="22" lean-forward="true" selection-end-line="42" />
         </state>
       </provider>
     </entry>
@@ -419,82 +372,13 @@
         <state relative-caret-position="-129" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/pay_menu/pay_menu.component.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="51">
-          <caret line="3" column="74" selection-start-line="3" selection-start-column="74" selection-end-line="3" selection-end-column="74" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pay_menu/pay_menu.component.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="6" column="16" lean-forward="true" selection-start-line="6" selection-start-column="16" selection-end-line="6" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pay/bank_menu/bank_menu.component.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="221">
-          <caret line="13" lean-forward="true" selection-start-line="13" selection-end-line="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../../../../home_work/sprites/sprites.html">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pay/bank_menu/bank_menu.component.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="6" lean-forward="true" selection-start-line="6" selection-end-line="6" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/../../../../2/weather_style.css">
       <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/information/information.component.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="7" column="64" selection-start-line="7" selection-start-column="43" selection-end-line="7" selection-end-column="64" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../../../../2/weather/weather.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="8" column="8" selection-start-line="8" selection-start-column="8" selection-end-line="8" selection-end-column="30" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../../../../home_work/sprites/img_style.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="272">
-          <caret line="16" column="4" lean-forward="true" selection-start-line="16" selection-start-column="4" selection-end-line="16" selection-end-column="4" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../../../../2/weather/weather_style.css">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pay/any_bank/any_bank.component.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="9" column="1" lean-forward="true" selection-start-line="9" selection-start-column="1" selection-end-line="9" selection-end-column="1" />
-        </state>
-      </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/../../../платежи/card.component.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="493">
           <caret line="29" column="1" lean-forward="true" selection-start-line="29" selection-start-column="1" selection-end-line="29" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pay/any_bank/any_bank.component.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="15" column="50" lean-forward="true" selection-start-line="15" selection-start-column="50" selection-end-line="15" selection-end-column="50" />
         </state>
       </provider>
     </entry>
@@ -505,17 +389,153 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/../../../cookbook/src/app/recipes/recipe-detail/recipe-detail.component.html">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../../../cookbook/src/app/recipes/recipe-list/recipe-list.component.html">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../../../cookbook/src/app/shopping-list/shopping-list.component.css">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../../../cookbook/src/app/shopping-list/shopping-list.component.html">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../../../cookbook/src/app/recipes/recipes.component.html">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../../../cookbook/src/tsconfig.app.json">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pay/internet_bank/internet_bank.component.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="340">
+          <caret line="20" column="1" lean-forward="true" selection-start-line="17" selection-end-line="20" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/request_pay/request_pay.component.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="228">
-          <caret line="18" column="1" lean-forward="true" selection-start-line="18" selection-start-column="1" selection-end-line="18" selection-end-column="1" />
+        <state relative-caret-position="296">
+          <caret line="45" column="19" selection-start-line="45" selection-start-column="19" selection-end-line="45" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pay/internet_bank/internet_bank.component.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="12" column="63" selection-start-line="12" selection-start-column="63" selection-end-line="12" selection-end-column="63" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/request_pay/request_pay.component.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="425">
-          <caret line="25" column="58" lean-forward="true" selection-start-line="25" selection-start-column="58" selection-end-line="25" selection-end-column="58" />
+        <state relative-caret-position="64">
+          <caret line="11" column="5" lean-forward="true" selection-start-line="11" selection-start-column="5" selection-end-line="11" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/company/company.component.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="11" column="32" lean-forward="true" selection-start-line="11" selection-start-column="32" selection-end-line="11" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pay/any_bank/any_bank.component.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="289">
+          <caret line="17" column="4" lean-forward="true" selection-start-line="17" selection-start-column="4" selection-end-line="17" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../../../../home_work/sprites/sprites.html">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../../../../home_work/sprites/img_style.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="238">
+          <caret line="14" column="38" selection-start-line="14" selection-start-column="29" selection-end-line="14" selection-end-column="38" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pay/pay.component.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="8" column="6" lean-forward="true" selection-start-line="8" selection-start-column="6" selection-end-line="8" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pay/bank_menu/bank_menu.component.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="374">
+          <caret line="22" column="3" selection-start-line="22" selection-start-column="3" selection-end-line="22" selection-end-column="3" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pay/bank_menu/bank_menu.component.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="12" lean-forward="true" selection-start-line="12" selection-end-line="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../../../cookbook/src/app/header/header.component.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="323">
+          <caret line="19" column="11" lean-forward="true" selection-start-line="19" selection-start-column="11" selection-end-line="19" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pay/any_bank/any_bank.component.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="442">
+          <caret line="26" lean-forward="true" selection-start-line="26" selection-end-line="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../../../../2/weather/weather.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="8" column="8" selection-start-line="8" selection-start-column="8" selection-end-line="8" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../../../../2/weather/weather_style.css">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app.component.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="289">
+          <caret line="17" lean-forward="true" selection-start-line="17" selection-end-line="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pay_menu/pay_menu.component.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="1" column="18" lean-forward="true" selection-start-line="2" selection-start-column="25" selection-end-line="2" selection-end-column="40" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pay_menu/pay_menu.component.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="15" selection-start-line="15" selection-end-line="17" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/information/information.component.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="4" column="8" lean-forward="true" selection-start-line="4" selection-start-column="8" selection-end-line="4" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/information/information.component.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="289">
+          <caret line="17" lean-forward="true" selection-start-line="17" selection-end-line="17" />
         </state>
       </provider>
     </entry>

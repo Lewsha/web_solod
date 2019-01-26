@@ -1,14 +1,21 @@
-div{
-  display: inline-block;
-}
 h1{
-  text-align: left;
+  font-size: 17pt;
+  font-weight: bold;
 }
-.picture {
-  position: relative;
-  float: right;
-}
-/*.layout{
-  position: absolute;
-}*/
 
+b{
+  color: grey;
+}
+
+a{
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.indented, b{
+  margin: 0 4em 4em 0;
+}
+
+.col-sm-7{
+  padding: 0;
+}

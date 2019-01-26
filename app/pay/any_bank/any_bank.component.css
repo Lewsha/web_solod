@@ -9,6 +9,12 @@ div {
   display: inline-block;
 }
 
+form p {
+  display: grid;
+  grid-template-columns: 30% repeat(3, 23%);
+  margin: 15px;
+}
+
 img{
   width: 40px;
   height: 30px;
@@ -21,7 +27,11 @@ textarea {
   width: 90%;
   border: none;
   border-bottom: 1px solid black;
+  grid-column: 2/5;
 }
+
+
+
 .cardInfo {
   border: 1px solid gray;
   border-radius: 10px;
@@ -33,15 +43,21 @@ textarea {
   padding: 10px;
 }
 
+.paymentInfo{
+  width: 450px;
+}
+
 .card {
   margin: 10% 5%;
   background: #F0F0F0;
+  border-bottom: 1px solid #808080;
 }
 
 .date {
   width: 60%;
   margin: 5% auto 10% 5%;
   background: #F0F0F0;
+  border-bottom: 1px solid #808080;
   /* display: inline-block; */
 }
 
@@ -49,10 +65,12 @@ textarea {
   width: 15%;
   margin: 5% auto 10% 5%;
   background: #F0F0F0;
+  border-bottom: 1px solid #808080;
 }
 
 input[type="submit"] {
-  width: 100px;
+  width: 90px;
+  height: 35px;
   display: block;
   border: 1px solid black;
   background: plum;

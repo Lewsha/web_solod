@@ -1,13 +1,19 @@
-a{
-  text-decoration: none; /* Отменяем подчеркивание у ссылки */
+.nav-link{
+  font-weight: bold;
+  font-size: 14pt;
+  padding: 0;
 }
 
-nav>ul{
-  margin: 0;
-  padding: 10px;
+.nav-link:hover{
+  background: white;
+  color: black;
 }
 
-nav>ul li{
-  display: inline-block;
-  padding: 5px;
+.nav-link:active{
+  background: white;
+  color: black;
+}
+
+div{
+  padding: 0;
 }

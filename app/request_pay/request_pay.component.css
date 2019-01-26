@@ -12,6 +12,15 @@ form p {
   grid-template-columns: 30% repeat(3, 23%)
 }
 
+label{
+  color: #808080;
+}
+
+span{
+  color: #808080;
+  font-weight: bold;
+}
+
 input[type="text"] {
   grid-column: 2/5;
   border: none;
@@ -30,19 +39,18 @@ input[type="reset"]
   display: block;
   margin-bottom: 10px;
   height: 30px;
-  font-weight: bold;
 }
 
 input[type="submit"] {
   border: 1px solid black;
   background: plum;
-  color: #000;
 }
 
 input[type="reset"] {
   border: none;
   background: none;
   color: blue;
+  font-weight: bold;
 }
 
 input[type="radio"]:checked + label {

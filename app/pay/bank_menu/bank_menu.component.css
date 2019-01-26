@@ -1,5 +1,5 @@
-a{
-  text-decoration: none; /* Отменяем подчеркивание у ссылки */
+/*a{
+  text-decoration: none; /* Отменяем подчеркивание у ссылки
 }
 
 nav>ul{
@@ -11,3 +11,13 @@ nav>ul li{
   display: inline-block;
   padding: 5px;
 }
+
+.card_black{
+  background-image: url("card_black.png");
+  background-repeat: no-repeat;
+}
+
+div{
+  width: 20px;
+  height: 20px;
+}*/

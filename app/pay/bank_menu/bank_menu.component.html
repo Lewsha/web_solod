@@ -1,6 +1,12 @@
 <nav>
-  <ul>
-    <li><a href="#" (click)="onSelect('any_bank')"><h3>С карты любого банка</h3></a></li>
-    <li><a href="#" (click)="onSelect('internet_bank')"><h3>Из своего интернет-банка</h3></a></li>
+  <ul class="nav nav-tabs">
+    <li class="nav-item">
+      <a class="nav-link active" href="#" (click)="onSelect('any_bank')">
+        <span class="glyphicon glyphicon-credit-card"></span> С карты любого банка</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link active" href="#" (click)="onSelect('internet_bank')">
+        <span class="glyphicon glyphicon-phone"></span> Из своего интернет-банка</a>
+    </li>
   </ul>
 </nav>

@@ -7,7 +7,17 @@ form {
 }
 form p {
   display: grid;
-  grid-template-columns: 30% repeat(3, 23%)
+  grid-template-columns: 30% repeat(3, 23%);
+  margin: 20px;
+}
+
+label{
+  color: #808080;
+}
+
+span{
+  color: #808080;
+  font-weight: bold;
 }
 
 input[type="text"] {
@@ -22,7 +32,6 @@ input[type="reset"]
   display: block;
   margin-bottom: 10px;
   height: 30px;
-  font-weight: bold;
 }
 
 input[type="submit"] {
@@ -35,6 +44,7 @@ input[type="reset"] {
   border: none;
   background: none;
   color: blue;
+  font-weight: bold;
 }
 
 input[type="radio"]:checked + label {
