@@ -7,3 +7,44 @@ h2{
   font-size: 12pt;
   font-weight: bold;
 }
+
+.nav-link{
+  font-weight: bold;
+  font-size: 12pt;
+  padding: 6px 15px 6px 0;
+}
+
+.nav-link:hover{
+  background: white;
+  color: black;
+}
+
+#check {
+  display: none;
+}
+
+#check:checked ~ .textarea {
+  height: 100px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+#check:not(:checked) ~ .show-more {
+  display: none;
+}
+
+.textarea {
+  display: block;
+  width: 600px;
+  margin-bottom: 20px;
+}
+
+label{
+  color: royalblue;
+}
+
+li>a{
+  width: 50px;
+  height: 50px;
+}
+
