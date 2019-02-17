@@ -25,7 +25,7 @@ import {AdminComponent} from "./admin_panel/admin_panel.component";
     Bank_menuComponent,
     Any_bankComponent,
     Internet_bankComponent,
-    AdminComponent
+    AdminComponent,
   ],
   imports: [
     BrowserModule,
