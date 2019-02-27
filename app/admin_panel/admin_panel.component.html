@@ -1,32 +1,10 @@
 <div class="admin_panel">
-    <input type="radio" name="table_select" id="table_select_1" checked>
-    <label for="table_select_1">Платежи с карты</label>
+  <input type="radio" name="table_select" id="table_select_1" checked>
+  <label for="table_select_1">Платежи с карты</label>
 
-    <input type="radio" name="table_select" id="table_select_2">
-    <label for="table_select_2">Запрошенные платежи</label>
+  <input type="radio" name="table_select" id="table_select_2">
+  <label for="table_select_2">Запрошенные платежи</label>
 
-    <div id="payment_table">
-      <input value="Дай" type="button" (click)="onClickGetPayment()" />
-      <div *ngIf="table_payment.length === 0">Ничего нету</div>
-      <div *ngFor="let entry of table_payment" >
-        <p>Номер карты: {{entry["card number"]}}</p>
-        <p>CVC: {{entry.cvc}}</p>
-        <p>Комментарий: {{entry.comment}}</p>
-        <p>Дата: {{entry.date}}</p>
-        <p>E-mail: {{entry.email}}</p>
-        <p>Сумма: {{entry.sum}}</p><hr>
-      </div>
-    </div>
-    <div id="request_pay_table">
-      <input value="Дай" type="button" (click)="onClickGetRequestedPayment()" />
-      <div *ngIf="table_requested_payment.length === 0">Ничего нету</div>
-      <div *ngFor="let entry of table_requested_payment" >
-        <p>От кого: {{entry.from}}</p>
-        <p>E-mail: {{entry.email}}</p>
-        <p>Телефон: {{entry.telephone}}</p>
-        <p>Цель: {{entry.purpose}}</p>
-        <p>БИК: {{entry.bik}}</p>
-        <p>Номер счета: {{entry["bill number"]}}</p><hr>
-      </div>
-    </div>
+  <div id="payment_table"><app-payment></app-payment></div>
+  <div id="request_pay_table"><app-requested-payment></app-requested-payment></div>
 </div>

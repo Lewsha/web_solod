@@ -1,0 +1,41 @@
+<label class="description">Сортировать:</label>
+<select [(ngModel)]="param_sort">
+  <option value="">(Не выбрано)</option>
+  <option value="asc">По возрастанию</option>
+  <option value="desc">По убыванию</option>
+</select>
+<label class="description">Поле для сортировки:</label>
+<select [(ngModel)]="param_sortField">
+  <option value="">(Не выбрано)</option>
+  <option value="card number">Номер карты</option>
+  <option value="cvc">CVC</option>
+  <option value="comment">Комментарий</option>
+  <option value="date">Дата</option>
+  <option value="email">e-mail</option>
+  <option value="sum">сумма</option>
+</select>
+<label class="description">Поле для фильтрации:</label>
+<select [(ngModel)]="param_filterField">
+  <option value="">(Не выбрано)</option>
+  <option value="card number">Номер карты</option>
+  <option value="cvc">CVC</option>
+  <option value="comment">Комментарий</option>
+  <option value="date">Дата</option>
+  <option value="email">e-mail</option>
+  <option value="sum">сумма</option>
+</select>
+<label class="description">Значение для фильтрации</label><input type="text" [(ngModel)]="param_filter"/>
+<input value="Обновить" type="button" (click)="onClickRefresh()"/>
+<div *ngIf="table.length === 0">Ничего нету</div>
+<div *ngFor="let entry of table; let i = index" [ngClass]="{'safe_pay': entry.safe, 'unsafe_pay': !entry.safe}">
+  <div>
+    <p>Номер карты: {{entry["card number"]}}</p>
+    <p>CVC: {{entry.cvc}}</p>
+    <p>Комментарий: {{entry.comment}}</p>
+    <p>Дата: {{entry.date}}</p>
+    <p>E-mail: {{entry.email}}</p>
+    <p>Сумма: {{entry.sum}}</p>
+  </div>
+  <label class="description">Отметить как {{entry.safe ? "небезопасный": "безопасный"}}</label>
+  <input value="Отметить" type="button" (click)="onClickTest(i)"><hr>
+</div>

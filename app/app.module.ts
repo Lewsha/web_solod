@@ -13,6 +13,8 @@ import {Internet_bankComponent} from "./pay/internet_bank/internet_bank.componen
 import {Bank_menuComponent} from "./pay/bank_menu/bank_menu.component";
 import {CompanyComponent} from "./company/company.component";
 import {AdminComponent} from "./admin_panel/admin_panel.component";
+import { PaymentComponent } from './admin_panel/payment/payment.component';
+import { RequestedPaymentComponent } from './admin_panel/requested-payment/requested-payment.component';
 
 @NgModule({
   declarations: [
@@ -26,6 +28,8 @@ import {AdminComponent} from "./admin_panel/admin_panel.component";
     Any_bankComponent,
     Internet_bankComponent,
     AdminComponent,
+    PaymentComponent,
+    RequestedPaymentComponent,
   ],
   imports: [
     BrowserModule,
