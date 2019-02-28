@@ -1,6 +1,7 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { FormsModule } from '@angular/forms';
+import { RouterModule } from '@angular/router';
 
 import { AppComponent } from './app.component';
 import { InformationComponent } from './information/information.component';
@@ -11,6 +12,9 @@ import {Any_bankComponent} from "./pay/any_bank/any_bank.component";
 import {Internet_bankComponent} from "./pay/internet_bank/internet_bank.component";
 import {Bank_menuComponent} from "./pay/bank_menu/bank_menu.component";
 import {CompanyComponent} from "./company/company.component";
+import {AdminComponent} from "./admin_panel/admin_panel.component";
+import { PaymentComponent } from './admin_panel/payment/payment.component';
+import { RequestedPaymentComponent } from './admin_panel/requested-payment/requested-payment.component';
 
 @NgModule({
   declarations: [
@@ -22,11 +26,19 @@ import {CompanyComponent} from "./company/company.component";
     PayComponent,
     Bank_menuComponent,
     Any_bankComponent,
-    Internet_bankComponent
+    Internet_bankComponent,
+    AdminComponent,
+    PaymentComponent,
+    RequestedPaymentComponent,
   ],
   imports: [
     BrowserModule,
-    FormsModule
+    FormsModule,
+    RouterModule.forRoot([{
+        path: "admin",
+        component: AdminComponent
+      }
+    ])
   ],
   providers: [],
   bootstrap: [AppComponent]

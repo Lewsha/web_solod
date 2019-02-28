@@ -1,0 +1,7 @@
+div.safe_pay {
+  background: lightgreen;
+}
+
+div.unsafe_pay {
+  border: darksalmon;
+}

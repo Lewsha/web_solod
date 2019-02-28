@@ -1,0 +1,11 @@
+<input value="kek" type="button" (click)="onClick()"/>
+<div *ngIf="table.length === 0">Ничего нету</div>
+<div *ngFor="let entry of table">
+  <p>От кого: {{entry.from}}</p>
+  <p>E-mail: {{entry.email}}</p>
+  <p>Телефон: {{entry.telephone}}</p>
+  <p>Цель: {{entry.purpose}}</p>
+  <p>БИК: {{entry.bik}}</p>
+  <p>Номер счета: {{entry["bill number"]}}</p>
+  <hr>
+</div>
