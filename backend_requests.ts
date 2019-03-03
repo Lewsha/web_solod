@@ -1,10 +1,12 @@
 const SERVER_URL = 'http://localhost:4001';
 
 async function get(url: string) {
-  return await fetch(SERVER_URL + url)
-    .then(answer => {
-      return answer.json();
-    })
+  return await fetch(SERVER_URL + url, {
+  }).then(answer => {
+    check_auth(answer);
+    console.log(answer.body);
+    return answer.json();
+  })
     .catch(error => {
       console.log(error);
     });
@@ -17,7 +19,7 @@ async function post(url: string, obj: Object) {
       'Content-Type': 'application/json'
     },
     method: 'POST',
-    body: JSON.stringify(obj)
+    body: JSON.stringify(obj),
   });
 }
 
@@ -31,21 +33,23 @@ async function patch(url_root: string, id: string, obj: Object) {
     },
     method: 'PATCH',
     body: JSON.stringify(obj)
+  }).then(answer => {
+    check_auth(answer);
+    return answer;
   });
 }
 
-async function put(login: string, password: string){
+function put(login: string, password: string) {
   const url = `${SERVER_URL}/auth`;
-  const obj = {"login": "login", "password": "password"};
-  fetch(url, {
+  const obj = {'login': login, 'password': password};
+  return fetch(url, {
     headers: {
       Accept: 'application/json',
       'Content-Type': 'application/json'
     },
-    method: "PUT",
+    method: 'POST',
     body: JSON.stringify(obj)
-  }).then(success => console.log(`success: ${success}`),
-      error => console.log(`error: ${error}`));
+  });
 }
 
 function build_url(url_root: string, sort: string, sort_field: string, filter: string, filter_field: string) {
@@ -60,18 +64,6 @@ function build_url(url_root: string, sort: string, sort_field: string, filter: s
 
 
 export class Payment {
-  /*
-  payment format: {
-      "card number": "1234 1234 1234 1234",
-      "date": "",
-      "cvc": "123",
-      "sum": 7000,
-      "comment": "My comment!",
-      "email": "blabla@alibaba.com",
-      "safe": true | false
-  }
-  */
-
   'card number': string;
   'date': string;
   'cvc': string;
@@ -81,7 +73,7 @@ export class Payment {
   'safe': boolean;
   'id': string;
 
-  constructor(card: string, date: string, cvc: string, sum: number, comment: string, email: string){
+  constructor(card: string, date: string, cvc: string, sum: number, comment: string, email: string) {
     this['card number'] = card;
     this.date = date;
     this.cvc = cvc;
@@ -94,18 +86,6 @@ export class Payment {
 
 
 export class RequestedPayment {
-  /*
-  request_pay format: {
-      "from": "ИНН или название платильщика",
-      "bik": "BIK number",
-      "bill number": "21321898",
-      "purpose": 0 =~ "НДС 18%" | 1 =~ "НДС 10%" | 2 =~ "Без НДС",
-      "telephone": "+7(912)834-23-21",
-      "email": "blabla@alibaba.com",
-      "safe": true | false
-  }
-  */
-
   'from': string;
   'bik': string;
   'bill number': string;
@@ -113,6 +93,17 @@ export class RequestedPayment {
   'telephone': string;
   'email': string;
   'safe': boolean;
+
+  constructor(from: string, bik: string, bill_num: string, purpose: number, telephone: string,
+              email: string) {
+    this.from = from;
+    this.bik = bik;
+    this['bill number'] = bill_num;
+    this.purpose = purpose;
+    this.telephone = telephone;
+    this.email = email;
+    this.safe = true;
+  }
 }
 
 export class AnyBankQuery {
@@ -121,22 +112,44 @@ export class AnyBankQuery {
   'bill_num': string;
   'sum': string;
   'purpose': string;
+
+  constructor(from: string, bik: string, bill_num: string, sum: string, purpose: string) {
+    this.from = from;
+    this.bik = bik;
+    this.bill_num = bill_num;
+    this.sum = sum;
+    this.purpose = purpose;
+  }
 }
 
 let authorized = false;
 
+function check_auth(response) {
+  if (response.status === 401) {
+    authorized = false;
+  }
+}
+
 export default {
-  authorize: (login: string, password: string) => {
-    // TODO
-    // await put(login, password);
-    authorized = true;
+  authorize: async (login: string, password: string, onSuccess, onFailed = () => {}) => {
+    put(login, password).then(response => {
+      if (response.status === 200) {
+        authorized = true;
+        onSuccess();
+      } else {
+        authorized = false;
+        onFailed();
+      }
+    }).catch(error => console.log(error));
   },
 
   sign_out: async () => {
     authorized = false;
   },
 
-  is_authorized: () => {return authorized},
+  is_authorized: () => {
+    return authorized;
+  },
 
   get_requested_payment: async (sort: string = undefined, sort_field: string = undefined,
                                 filter: string = undefined, filter_field: string = undefined) => {

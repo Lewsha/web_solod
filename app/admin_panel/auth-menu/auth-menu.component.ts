@@ -20,7 +20,12 @@ export class AuthMenuComponent implements OnInit {
     const login = f.value.login;
     const passw = f.value.password;
     console.log(login, passw);
-    if (login === 'kek') backend.authorize(login, passw);
+    backend.authorize(login, passw,
+      () => {
+        console.log('OK');
+      },
+      () => {
+        console.log('not OK');
+      });
   }
-
 }
