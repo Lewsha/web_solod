@@ -49,6 +49,13 @@ export class Any_bankComponent implements OnInit {
     return !((((!match_res))));
   }
 
+  check_xss(){
+    if (this.comment.indexOf('<script>') != -1){
+      this.comment = this.comment.replace('<script>', "<sssscript>");
+    }
+    return this.comment;
+  }
+
   constructor() { }
 
   ngOnInit() { }
@@ -85,6 +92,10 @@ export class Any_bankComponent implements OnInit {
       this.comment = "";
       all_are_valid = false;
     }
+
+    this.check_xss();
+    console.log(this.comment);
+
     if (all_are_valid) {
       // TODO send GET
       console.log("ALRIGHT");
