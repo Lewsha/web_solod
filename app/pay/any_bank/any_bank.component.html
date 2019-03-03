@@ -4,7 +4,7 @@
     <img src="assets/images/mastercard.png" alt="mastercard" align="right">
     <img src="assets/images/visa.png" alt="visa" align="right">
     <input class="card field" type="text" maxlength="16" name="card" id="card" placeholder="Номер карты" pattern="\d{16}" [(ngModel)]="card"  required>
-    <input class="date field" type="month" name="date" id="date" [(ngModel)]="date">
+    <input class="date field" type="text" name="date" id="date" placeholder="ММ/ГГ" [(ngModel)]="date">
     <input class="cvc field" type="password" maxlength="3" name="cvc" id="cvc" placeholder="CVC" pattern="\d{3}" [(ngModel)]="cvc" required>
   </div>
   <div class="paymentInfo">

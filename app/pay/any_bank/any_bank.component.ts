@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import backend from '../../../backend_requests';
+import {Payment} from '../../../backend_requests';
 
 @Component({
   selector: 'app-any_bank',
@@ -86,7 +87,12 @@ export class Any_bankComponent implements OnInit {
     }
     if (all_are_valid) {
       // TODO send GET
-      console.log("ALRIGHT")
+      console.log("ALRIGHT");
+      const payment = new Payment(
+        this.card, this.date, this.cvc, parseInt(this.sum), this.comment, this.email
+      );
+      delete payment.id;
+      backend.post_payment(payment);
     }
   }
 }

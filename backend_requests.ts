@@ -11,7 +11,7 @@ async function get(url: string) {
 }
 
 async function post(url: string, obj: Object) {
-  return await fetch(url, {
+  return await fetch(`${SERVER_URL}${url}`, {
     headers: {
       Accept: 'application/json',
       'Content-Type': 'application/json'
@@ -80,6 +80,16 @@ export class Payment {
   'email': string;
   'safe': boolean;
   'id': string;
+
+  constructor(card: string, date: string, cvc: string, sum: number, comment: string, email: string){
+    this['card number'] = card;
+    this.date = date;
+    this.cvc = cvc;
+    this.sum = sum;
+    this.comment = comment;
+    this.email = email;
+    this.safe = true;
+  }
 }
 
 

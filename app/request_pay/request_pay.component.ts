@@ -6,6 +6,10 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./request_pay.component.css']
 })
 export class Request_payComponent implements OnInit {
+
+  inn: string;
+
+
   constructor() { }
 
   ngOnInit() { }

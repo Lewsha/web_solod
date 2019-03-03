@@ -38,10 +38,11 @@ export class PaymentComponent implements OnInit {
   }
 
   onClickPatch(idx: number){
-    const payment = this.table[idx]
+    const payment = this.table[idx];
+    console.log(JSON.stringify(payment, null, 2));
     payment.safe = !payment.safe
     backend.patch_payment(payment).then(
-      () => this.onClickRefresh()
+      () => {this.onClickRefresh()}
     )
   }
 }
