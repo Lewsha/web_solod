@@ -1,4 +1,5 @@
 import {Component, OnInit} from '@angular/core';
+import backend from '../../backend_requests';
 
 @Component({
   selector: 'app-admin_panel',
@@ -6,6 +7,10 @@ import {Component, OnInit} from '@angular/core';
   styleUrls: ['./admin_panel.component.css']
 })
 export class AdminComponent implements OnInit {
+
+  authorized() {
+    return backend.is_authorized();
+  }
 
   ngOnInit() {
   }

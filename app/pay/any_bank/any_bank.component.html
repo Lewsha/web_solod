@@ -3,24 +3,24 @@
     <img src="assets/images/maestro.png" alt="maestro" align="right">
     <img src="assets/images/mastercard.png" alt="mastercard" align="right">
     <img src="assets/images/visa.png" alt="visa" align="right">
-    <input class="card field" type="text" maxlength="16" name="card" id="card" placeholder="Номер карты" pattern="\d{16}" required>
-    <input class="date field" type="month" name="date" id="date">
-    <input class="cvc field" type="password" maxlength="3" name="cvc" id="cvc" placeholder="CVC" pattern="\d{3}" required>
+    <input class="card field" type="text" maxlength="16" name="card" id="card" placeholder="Номер карты" pattern="\d{16}" [(ngModel)]="card"  required>
+    <input class="date field" type="month" name="date" id="date" [(ngModel)]="date">
+    <input class="cvc field" type="password" maxlength="3" name="cvc" id="cvc" placeholder="CVC" pattern="\d{3}" [(ngModel)]="cvc" required>
   </div>
   <div class="paymentInfo">
     <p>
       <label class="description" for="money">Сумма</label>
-      <input class="money field" type="text" name="money" id="money" placeholder="от 1000 до 75000" pattern="\d{1,5}(.\d{2})?" required>
+      <input class="money field" type="text" name="money" id="money" placeholder="от 1000 до 75000" pattern="\d{1,5}(.\d{2})?" [(ngModel)]="sum" required>
     </p>
     <p>
       <label class="description" for="comment">Комментарий</label>
-      <textarea class="comment field" name="comment" id="comment" cols="36" rows="1" placeholder="до 150 символов" maxlength="150"></textarea>
+      <textarea class="comment field" name="comment" id="comment" cols="36" rows="1" placeholder="до 150 символов" maxlength="150" [(ngModel)]="comment"></textarea>
     </p>
     <p>
       <label class="description" for="email">Ваша эл.почта</label>
-      <input class="email field" type="email" name="email" id="email" placeholder="Для квитациии об оплате" required>
+      <input class="email field" type="email" name="email" id="email" placeholder="Для квитациии об оплате" [(ngModel)]="email" required>
     </p>
-    <input type="submit" id="submit" onclick="alert('Клик!')" value="Заплатить">
+    <input type="submit" id="submit" (click)="onSubmit()" value="Заплатить">
   </div>
 </form>
 <script src="any_bank.validate.js"></script>

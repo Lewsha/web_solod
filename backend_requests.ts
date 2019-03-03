@@ -1,6 +1,3 @@
-import {copyObj} from '@angular/animations/browser/src/util';
-import {stringify} from 'querystring';
-
 const SERVER_URL = 'http://localhost:4001';
 
 async function get(url: string) {
@@ -37,14 +34,19 @@ async function patch(url_root: string, id: string, obj: Object) {
   });
 }
 
-// async function patch(url_root: string, id: string, obj: Object) {
-//   const url = SERVER_URL + `${url_root}/${id}`;
-//   console.log(url, JSON.stringify(obj));
-//   return await fetch(url, {
-//     method: 'PATCH',
-//     body: JSON.stringify(obj)
-//   });
-// }
+async function put(login: string, password: string){
+  const url = `${SERVER_URL}/auth`;
+  const obj = {"login": "login", "password": "password"};
+  fetch(url, {
+    headers: {
+      Accept: 'application/json',
+      'Content-Type': 'application/json'
+    },
+    method: "PUT",
+    body: JSON.stringify(obj)
+  }).then(success => console.log(`success: ${success}`),
+      error => console.log(`error: ${error}`));
+}
 
 function build_url(url_root: string, sort: string, sort_field: string, filter: string, filter_field: string) {
   let url = url_root;
@@ -111,7 +113,21 @@ export class AnyBankQuery {
   'purpose': string;
 }
 
+let authorized = false;
+
 export default {
+  authorize: (login: string, password: string) => {
+    // TODO
+    // await put(login, password);
+    authorized = true;
+  },
+
+  sign_out: async () => {
+    authorized = false;
+  },
+
+  is_authorized: () => {return authorized},
+
   get_requested_payment: async (sort: string = undefined, sort_field: string = undefined,
                                 filter: string = undefined, filter_field: string = undefined) => {
     return await get(build_url('/payment/requested', sort, sort_field, filter, filter_field))

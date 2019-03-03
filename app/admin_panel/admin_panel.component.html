@@ -1,4 +1,4 @@
-<div class="admin_panel">
+<div class="admin_panel" *ngIf="authorized()">
   <input type="radio" name="table_select" id="table_select_1" checked>
   <label for="table_select_1">Платежи с карты</label>
 
@@ -8,3 +8,4 @@
   <div id="payment_table"><app-payment></app-payment></div>
   <div id="request_pay_table"><app-requested-payment></app-requested-payment></div>
 </div>
+<app-auth-menu *ngIf="!authorized()"></app-auth-menu>

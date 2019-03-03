@@ -34,7 +34,7 @@ export class PaymentComponent implements OnInit {
             filter: string = undefined, filter_field: string = undefined){
     this.table = [];
     backend.get_payment(sort, sort_field, filter, filter_field)
-      .then((result) => {this.table = result})
+      .then((result) => {this.table = result ? result : []})
   }
 
   onClickPatch(idx: number){
@@ -44,9 +44,4 @@ export class PaymentComponent implements OnInit {
       () => this.onClickRefresh()
     )
   }
-
-  onClickTest(idx: number){
-
-  }
-
 }

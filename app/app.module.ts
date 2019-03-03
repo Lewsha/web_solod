@@ -15,6 +15,7 @@ import {CompanyComponent} from "./company/company.component";
 import {AdminComponent} from "./admin_panel/admin_panel.component";
 import { PaymentComponent } from './admin_panel/payment/payment.component';
 import { RequestedPaymentComponent } from './admin_panel/requested-payment/requested-payment.component';
+import { AuthMenuComponent } from './admin_panel/auth-menu/auth-menu.component';
 
 @NgModule({
   declarations: [
@@ -30,6 +31,7 @@ import { RequestedPaymentComponent } from './admin_panel/requested-payment/reque
     AdminComponent,
     PaymentComponent,
     RequestedPaymentComponent,
+    AuthMenuComponent,
   ],
   imports: [
     BrowserModule,

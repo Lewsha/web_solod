@@ -24,7 +24,7 @@ export class RequestedPaymentComponent implements OnInit {
   _get_data(sort: string = undefined, sort_field: string = undefined,
             filter: string = undefined, filter_field: string = undefined){
     backend.get_requested_payment(sort, sort_field, filter, filter_field)
-      .then((result) => {this.table = result})
+      .then((result) => {this.table = result ? result: []})
   }
 
 }
