@@ -142,6 +142,9 @@ export default {
   },
 
   sign_out: async () => {
+    fetch(`${SERVER_URL}/auth?sign_out=true`, {
+      method: "POST"
+    });
     authorized = false;
   },
 
@@ -185,7 +188,15 @@ export default {
     return await patch('/payment', id, obj);
   },
 
-  get_anyBank: async (obj: AnyBankQuery) => {
-    return await fetch(`${SERVER_URL}/anybank`, {body: JSON.stringify(obj)});
+  get_anyBank: (obj: AnyBankQuery) => {
+    let url = `${SERVER_URL}/anybank?`;
+    const params = Object.keys(obj);
+    for (let i = 0; i < params.length; i++){
+      const field = params[i];
+      const value = obj[field];
+      url=`${url}${field}=${value}&`;
+    }
+    url.substring(0, url.length - 1);
+    // return await fetch(url);
   }
 };

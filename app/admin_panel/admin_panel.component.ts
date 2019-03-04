@@ -12,6 +12,10 @@ export class AdminComponent implements OnInit {
     return backend.is_authorized();
   }
 
+  sign_out(){
+    backend.sign_out();
+  }
+
   ngOnInit() {
   }
 }

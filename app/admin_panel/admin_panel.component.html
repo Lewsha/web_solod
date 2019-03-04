@@ -1,3 +1,4 @@
+<input type="button" *ngIf="authorized()" (click)="sign_out()" value="SIGN OUT" />
 <div class="admin_panel" *ngIf="authorized()">
   <input type="radio" name="table_select" id="table_select_1" checked>
   <label for="table_select_1">Платежи с карты</label>
