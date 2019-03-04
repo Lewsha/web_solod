@@ -79,7 +79,12 @@ export class Internet_bankComponent implements OnInit {
       all_valid = false;
     }
     if (all_valid) {
-      console.log("All right")
+      // TODO send GET
+      console.log("ALRIGHT");
+      const anyBankQuery = new AnyBankQuery(
+        this.from, this.bik, this.bill_num, this.sum, this.purpose
+      );
+      backend.get_anyBank(anyBankQuery);
     }
   }
 }

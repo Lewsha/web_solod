@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import backend from '../../backend_requests';
+import { RequestedPayment } from '../../backend_requests';
 
 @Component({
   selector: 'app-request_pay',
@@ -10,7 +12,7 @@ export class Request_payComponent implements OnInit {
   inn: string = "";
   bik: string = "";
   bill_num: string = "";
-  purpose: string = "";
+  purpose: string = "НДС 18%";
   sum: string = "";
   telephone: string = "";
   email: string = "";
@@ -98,6 +100,14 @@ export class Request_payComponent implements OnInit {
     }
     if (all_valid) {
       console.log("All right")
+    }
+    if (all_valid) {
+      // TODO send GET
+      console.log("ALRIGHT");
+      const requestedPayment = new RequestedPayment(
+        this.inn, this.bik, this.bill_num, this.purpose, this.telephone, this.email
+      );
+      backend.post_requested_payment(requestedPayment);
     }
   }
 }

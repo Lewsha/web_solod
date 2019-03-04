@@ -63,7 +63,7 @@ function build_url(url_root: string, sort: string, sort_field: string, filter: s
 }
 
 
-export class Payment {
+export class Payment { // платеж с карты
   'card number': string;
   'date': string;
   'cvc': string;
@@ -85,16 +85,15 @@ export class Payment {
 }
 
 
-export class RequestedPayment {
+export class RequestedPayment { //запрошенный платеж
   'from': string;
   'bik': string;
   'bill number': string;
-  'purpose': number;
+  'purpose': string;
   'telephone': string;
   'email': string;
-  'safe': boolean;
 
-  constructor(from: string, bik: string, bill_num: string, purpose: number, telephone: string,
+  constructor(from: string, bik: string, bill_num: string, purpose: string, telephone: string,
               email: string) {
     this.from = from;
     this.bik = bik;
@@ -102,11 +101,10 @@ export class RequestedPayment {
     this.purpose = purpose;
     this.telephone = telephone;
     this.email = email;
-    this.safe = true;
   }
 }
 
-export class AnyBankQuery {
+export class AnyBankQuery { //заплатить из своего интернет-банка
   'from': string;
   'bik': string;
   'bill_num': string;
