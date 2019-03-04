@@ -1,4 +1,4 @@
-<form class="any_bank" action="">
+<form action="" (ngSubmit)="onSubmit()">
   <div class="cardInfo">
     <img src="assets/images/maestro.png" alt="maestro" align="right">
     <img src="assets/images/mastercard.png" alt="mastercard" align="right">
@@ -20,8 +20,7 @@
       <label class="description" for="email">Ваша эл.почта</label>
       <input class="email field" type="email" name="email" id="email" placeholder="Для квитациии об оплате" [(ngModel)]="email" required>
     </p>
-    <input type="submit" id="submit" (click)="onSubmit()" value="Заплатить">
+    <input type="submit" id="submit"value="Заплатить">
   </div>
 </form>
-<script src="any_bank.validate.js"></script>
 

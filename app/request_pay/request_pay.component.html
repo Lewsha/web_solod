@@ -1,38 +1,38 @@
 <p class="title">Создайте платёжку, а Индивидуальный предприниматель Швецова Марина Валерьевна
   подпишет её у себя в интернет-банке</p>
-<form action="">
+<form action="" (ngSubmit)="onSubmit()">
   <p>
     <label class="description" for="from">ИНН получателя</label>
-    <input type="text" name="from" id="from" placeholder="ИНН или название получателя" required>
+    <input type="text" name="from" id="from" placeholder="ИНН или название получателя" [(ngModel)]="inn" required>
   </p>
   <p>
     <label class="description" for="bic">БИК</label>
-    <input type="text" name="bic" id="bic" pattern="\d{9}" required>
+    <input type="text" name="bic" id="bic" pattern="\d{9}" [(ngModel)]="bik" required>
   </p>
   <p>
     <label class="description" for="number">Номер счёта</label>
-    <input type="text" name="number" id="number" pattern="\d{1,}" required>
+    <input type="text" name="number" id="number" pattern="\d{1,}" [(ngModel)]="bill_num"required>
   </p>
   <p class="for">
     <span class="description">За что</span>
-    <input type="radio" name="for" id="vat18" hidden checked>
+    <input type="radio" name="for" id="vat18" (click)="onClickVat18()" hidden checked>
     <label for="vat18">НДС 18%</label>
-    <input type="radio" name="for" id="vat10" hidden>
+    <input type="radio" name="for" id="vat10" (click)="onClickVat10()" hidden>
     <label for="vat10">НДС 10%</label>
-    <input type="radio" name="for" id="noVat" hidden>
+    <input type="radio" name="for" id="noVat" (click)="onClickNoVat()" hidden>
     <label for="noVat">Без НДС</label>
   </p>
   <p>
     <label class="description" for="money">Сколько</label>
-    <input type="text" name="money" id="money" pattern="\d{1,5}(.\d{2})?" required>
+    <input type="text" name="money" id="money" pattern="\d{1,5}(.\d{2})?" [(ngModel)]="sum" required>
   </p>
   <p>
     <label class="description" for="tel">Номер телефона</label>
-    <input type="tel" name="tel" id="tel" placeholder="+7" required>
+    <input type="tel" name="tel" id="tel" placeholder="+7(XXX)XXX-XX-XX" [(ngModel)]="telephone"required>
   </p>
   <p>
     <label class="description" for="email">Эл.почта</label>
-    <input type="email" name="email" id="email" placeholder="Для уведомлений об оплате" required>
+    <input type="email" name="email" id="email" placeholder="Для уведомлений об оплате" [(ngModel)]="email" required>
   </p>
   <input type="submit" value="Создать платёж">
   <input type="reset" value="Очистить форму">
