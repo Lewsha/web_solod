@@ -9,6 +9,11 @@ import backend from '../../../backend_requests';
 })
 export class RequestedPaymentComponent implements OnInit {
 
+  param_sort: string = "";
+  param_sortField: string = "";
+  param_filterField: string = "";
+  param_filter: string = "";
+
   table: RequestedPayment[] = [];
 
   constructor() { }
@@ -27,4 +32,7 @@ export class RequestedPaymentComponent implements OnInit {
       .then((result) => {this.table = result ? result: []})
   }
 
+  onClickRefresh(){
+    this._get_data(this.param_sort, this.param_sortField, this.param_filter, this.param_filterField)
+  }
 }

@@ -1,10 +1,37 @@
-<input value="kek" type="button" (click)="onClick()"/>
+<label class="description">Сортировать:</label>
+<select [(ngModel)]="param_sort">
+  <option value="">(Не выбрано)</option>
+  <option value="asc">По возрастанию</option>
+  <option value="desc">По убыванию</option>
+</select>
+<label class="description">Поле для сортировки:</label>
+<select [(ngModel)]="param_sortField">
+  <option value="">(Не выбрано)</option>
+  <option value="from">От кого</option>
+  <option value="email">email</option>
+  <option value="telephone">телефон</option>
+  <option value="purpose">Для чего</option>
+  <option value="bik">БИК</option>
+  <option value="bill number">Номер счета</option>
+</select>
+<label class="description">Поле для фильтрации:</label>
+<select [(ngModel)]="param_filterField">
+  <option value="">(Не выбрано)</option>
+  <option value="from">От кого</option>
+  <option value="email">email</option>
+  <option value="telephone">телефон</option>
+  <option value="purpose">Для чего</option>
+  <option value="bik">БИК</option>
+  <option value="bill number">Номер счета</option>
+</select>
+<label class="description">Значение для фильтрации</label><input type="text" [(ngModel)]="param_filter"/>
+<input value="Обновить" type="button" (click)="onClickRefresh()"/>
 <div *ngIf="table.length === 0">Ничего нету</div>
 <div *ngFor="let entry of table">
   <p>От кого: {{entry.from}}</p>
   <p>E-mail: {{entry.email}}</p>
   <p>Телефон: {{entry.telephone}}</p>
-  <p>Цель: {{entry.purpose}}</p>
+  <p>Для чего: {{entry.purpose}}</p>
   <p>БИК: {{entry.bik}}</p>
   <p>Номер счета: {{entry["bill number"]}}</p>
   <hr>
