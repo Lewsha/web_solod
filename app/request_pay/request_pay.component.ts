@@ -7,10 +7,31 @@ import { Component, OnInit } from '@angular/core';
 })
 export class Request_payComponent implements OnInit {
 
-  inn: string;
+  inn: string = "";
+  bik: string = "";
+  bill_num: string = "";
+  purpose: string = "";
+  sum: string = "";
+  telephone: string = "";
+  email: string = "";
 
+  check_inn(){}
+
+  check_bik(){}
+
+  check_bill_num(){}
+
+  check_purpose(){}
+
+  check_sum(){}
+
+  check_telephone(){}
+
+  check_email(){}
 
   constructor() { }
 
   ngOnInit() { }
+
+  onSubmit(){}
 }

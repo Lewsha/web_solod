@@ -39,7 +39,7 @@ async function patch(url_root: string, id: string, obj: Object) {
   });
 }
 
-function put(login: string, password: string) {
+function post_auth(login: string, password: string) {
   const url = `${SERVER_URL}/auth`;
   const obj = {'login': login, 'password': password};
   return fetch(url, {
@@ -132,7 +132,7 @@ function check_auth(response) {
 
 export default {
   authorize: async (login: string, password: string, onSuccess, onFailed = () => {}) => {
-    put(login, password).then(response => {
+    post_auth(login, password).then(response => {
       if (response.status === 200) {
         authorized = true;
         onSuccess();
