@@ -9,7 +9,8 @@ import backend from '../../backend_requests';
 export class AdminComponent implements OnInit {
 
   authorized() {
-    return backend.is_authorized();
+    //return backend.is_authorized();
+    return true;
   }
 
   sign_out(){

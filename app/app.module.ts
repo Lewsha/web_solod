@@ -1,7 +1,9 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-import { FormsModule } from '@angular/forms';
+import {FormBuilder, FormsModule} from '@angular/forms';
+import { ReactiveFormsModule } from '@angular/forms';
 import { RouterModule } from '@angular/router';
+import { HttpClientModule } from '@angular/common/http';
 
 import { AppComponent } from './app.component';
 import { InformationComponent } from './information/information.component';
@@ -16,6 +18,8 @@ import {AdminComponent} from "./admin_panel/admin_panel.component";
 import { PaymentComponent } from './admin_panel/payment/payment.component';
 import { RequestedPaymentComponent } from './admin_panel/requested-payment/requested-payment.component';
 import { AuthMenuComponent } from './admin_panel/auth-menu/auth-menu.component';
+import { ViewComponent } from './view/view.component';
+import { TestComponent } from './test/test.component';
 
 @NgModule({
   declarations: [
@@ -32,13 +36,25 @@ import { AuthMenuComponent } from './admin_panel/auth-menu/auth-menu.component';
     PaymentComponent,
     RequestedPaymentComponent,
     AuthMenuComponent,
+    ViewComponent,
+    TestComponent,
   ],
   imports: [
     BrowserModule,
     FormsModule,
+    ReactiveFormsModule,
+    HttpClientModule,
     RouterModule.forRoot([{
-        path: "admin",
+        path: 'admin',
         component: AdminComponent
+      },
+      {
+        path: '',
+        component: ViewComponent
+      },
+      {
+        path: 'test',
+        component: TestComponent
       }
     ])
   ],

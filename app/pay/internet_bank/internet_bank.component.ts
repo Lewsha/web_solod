@@ -2,7 +2,7 @@ import {Component, OnInit} from '@angular/core';
 import backend from '../../../backend_requests';
 import {AnyBankQuery} from '../../../backend_requests';
 
-import {saveAs} from '../../../../node_modules/FileSaver/FileSaver';
+//import {saveAs} from '../../../../node_modules/FileSaver/FileSaver';
 
 
 @Component({

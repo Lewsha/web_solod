@@ -1,0 +1,15 @@
+<div class="container">
+  <div class="row">
+    <app-information></app-information>
+  </div>
+  <hr noshade size="3">
+  <div class="row">
+    <app-pay_menu (featureSelected)="onNavigate($event)"></app-pay_menu>
+    <app-pay *ngIf="loadedFeature === 'pay'"></app-pay>
+    <app-request_pay *ngIf="loadedFeature !== 'pay'"></app-request_pay>
+  </div>
+  <hr noshade size="3">
+  <div class="row">
+    <app-company></app-company>
+  </div>
+</div>

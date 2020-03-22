@@ -1,0 +1,52 @@
+<div *ngFor="let payment of payments | async">
+  <p>{{ payment.id }}</p>
+  <p>{{ payment.payment.card_number}}</p>
+</div>
+
+<form [formGroup]="paymentForm" (ngSubmit)="onSubmit(paymentForm.value)">
+
+  <div>
+    <label for="card_number">
+      Card number
+    </label>
+    <input id="card_number" type="text" formControlName="card_number">
+  </div>
+
+  <div>
+    <label for="cvc">
+      Cvc
+    </label>
+    <input id="cvc" type="text" formControlName="cvc">
+  </div>
+
+  <div>
+    <label for="date">
+      Date
+    </label>
+    <input id="date" type="date" formControlName="date">
+  </div>
+
+  <div>
+    <label for="sum">
+      Summ
+    </label>
+    <input id="sum" type="number" formControlName="sum">
+  </div>
+
+  <div>
+    <label for="comment">
+      Comment
+    </label>
+    <input id="comment" type="text" formControlName="comment">
+  </div>
+
+  <div>
+    <label for="email">
+      Email
+    </label>
+    <input id="email" type="email" formControlName="email">
+  </div>
+
+  <button class="button" type="submit">Purchase</button>
+
+</form>
